@@ -34,3 +34,13 @@ class Solution:
 ## Complexity:
 - **Time Complexity**: `O(n)` where `n` is the length of `s + t`.
 - **Space Complexity**: `O(1)` as we only use a single variable to store the XOR result.
+
+## Exercises
+
+- **Exercise 1 — Single Number (LeetCode 136)**: Given a non-empty array of integers where every element appears twice except for one, find that single one using XOR.
+    - Example: `nums = [2,2,1]` -> `1`
+
+- **Exercise 2 — Find the Added Character (LeetCode 389)**: Given strings `s` and `t` where `t` is `s` with one extra character, find the extra character using XOR of character codes.
+    - Example: `s = 'abcd', t = 'abcde'` -> `'e'`
+
+**Hints:** XOR cancels paired values; verify data types when XORing characters vs integers.

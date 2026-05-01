@@ -35,8 +35,28 @@ class Solution:
         return ''.join(result)
 ```
 
+### Two Pointers
+
+> **Concept**: Use two pointers to efficiently solve problems involving rearranging or comparing elements in arrays or linked lists.
+
+#### Problems Covered:
+- [[1.questions/283.leetcode|283. Move Zeroes]]
+  - **Key Use**: Use two pointers to move all non-zero elements to the front of the array while maintaining their relative order.
+  - **Solution**: [[2.answers/283.leetcode.two_pointers.py|Two Pointers Solution]]
+  - **Explanation**: [[3.understand/283.leetcode|Progressive Explanation]]
+
 ---
 
 ## Complexity:
 - **Time Complexity**: `O(n + p)` where `n` and `p` are the lengths of the two strings.
 - **Space Complexity**: `O(n + p)` for the result string.
+
+## Exercises
+
+- **Exercise 1 — Move Zeroes (LeetCode 283)**: Move all zeros to the end of the array in-place while preserving order.
+    - Example: `nums = [0,1,0,3,12]` -> `[1,3,12,0,0]`
+
+- **Exercise 2 — Two Sum II (Input Array Is Sorted, LeetCode 167)**: Given a sorted array, find indices of two numbers summing to target using two pointers.
+    - Example: `numbers = [2,7,11,15], target = 9` -> `[1,2]` (1-based indices)
+
+**Hints:** Practice pointer initialization and loop invariants; verify termination conditions with odd/even length inputs.

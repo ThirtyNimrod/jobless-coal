@@ -32,6 +32,19 @@ class Solution:
         return -1
 ```
 
+### 459. Repeated Substring Pattern (`1.questions/459.leetcode.md`)
+
+> **The key use:** Check if a string can be constructed by repeating a substring using string manipulation or mathematical approaches.
+
+```python
+# From 2.answers/459.leetcode.string_manipulation.py
+def repeatedSubstringPattern(s: str) -> bool:
+    doubled_s = (s + s)[1:-1]
+    return s in doubled_s
+```
+
+See the full progressive explanation: [[3.understand/459.leetcode|Repeated Substring Pattern  Progressive Explanation]]
+
 ---
 
 ## Complexity:
@@ -93,3 +106,13 @@ class Solution:
 ## Complexity of KMP:
 - **Time Complexity**: `O(n + m)` where `n` is the length of `haystack` and `m` is the length of `needle`.
 - **Space Complexity**: `O(m)` for the LPS array.
+
+## Exercises
+
+- **Exercise 1 — Implement `strStr()` (LeetCode 28)**: Return the index of the first occurrence of `needle` in `haystack`, or `-1` if not found.
+    - Example: `haystack = 'hello', needle = 'll'` -> `2`
+
+- **Exercise 2 — Find All Occurrences**: Return a list of starting indices where `pattern` occurs in `text`. Implement KMP for O(n + m) performance.
+    - Example: `text = 'ababab', pattern = 'aba'` -> `[0,2]`
+
+**Hints:** Practice building the LPS array on small patterns and trace the pointer movements for mismatches.
